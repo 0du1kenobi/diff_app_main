@@ -1,6 +1,7 @@
 ## diff_app
 
-A small Python program that uses the Flet framework to display a GUI 
+A small Python program that uses the Flet framework to display a GUI. 
 
 ---
-The program calculates the difference between the first number and the second number and outputs the result in number format and in percentage format.
+The program calculates the difference between the first and second number and outputs the result in numeric and percentage format.
++ all calculations are written to the text file output.txt
