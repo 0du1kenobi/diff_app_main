@@ -14,8 +14,8 @@ def main(page):
             diff = round(number1 - number2, 2)
             percent = round((diff / number1) * 100, 2)
 
-            counter[0] += 1  # Увеличиваем счетчик
-            # Добавляем счетчик перед текстом результата
+            counter[0] += 1  # Increasing the counter
+            # Add a counter before the result text
             results.current.controls.append(
                 ft.Text(f"{counter[0]}. {number1} and {number2} - [Diff: {diff}] [{percent}%]", selectable=True)
             )
@@ -25,7 +25,7 @@ def main(page):
             page.update()
             num1.current.focus()
         except ValueError:
-            counter[0] += 1  # Увеличиваем счетчик
+            counter[0] += 1  # Increasing the counter
             results.current.controls.append(ft.Text(f"{counter[0]}. Invalid input. Please enter valid numbers."))
             page.update()
 
